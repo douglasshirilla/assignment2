@@ -1,0 +1,73 @@
+Did Git Lab Tutorials 10/14/2021
+Created Github account 10/12/2021
+
+1)
+dougl@DESKTOP-SDQ00HD MINGW64 /d/School/CEN4020/assignment2/docs (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/douglasshirilla/assignment2.git
+   7f7dbea..26c961d  master -> master
+
+2)
+9 commits
+dougl@DESKTOP-SDQ00HD MINGW64 /d/School/CEN4020/assignment2 (master)
+$ git rev-list --all
+e994e5e6c765e33c127d56df0e360deaf5dbe6bf
+26c961dc08bce80e526c7e85ec9571ecead5bb42
+7f7dbea48932cb35fb3bbea103c6ff3ca4275051
+f4975e5d56ff331762b318bfd12c5236e0299f25
+e424a923e80da4772ca789591ef3326230062a71
+03106e92a1e36708334c69dd071088c6d0937b1d
+f9cd890b3f89fbe5920a1fdf7da34ee915ba27b9
+f9c24b027e6275ff6a1911241014c44971b4e8d0
+4f6c88c953f4601929df7980a19dcdaee4f13854
+
+3)
+10/12/2021
+dougl@DESKTOP-SDQ00HD MINGW64 /d/School/CEN4020/assignment2 (master)
+$ git log -1 ./README.md
+commit 26c961dc08bce80e526c7e85ec9571ecead5bb42
+Author: Douglas Shirilla <douglasshirilla@yahoo.com>
+Date:   Tue Oct 12 21:10:30 2021 -0400
+
+    Updated information files
+
+4) Branches are used often because it is easier to divide up work and keep track of commits by using them. They also take up no storage or memory issues that come along with many branches.
+
+5) Git log displays changes to the repository whereas git status shows the working directory and staging area before a commit is made. 
+
+6)
+dougl@DESKTOP-SDQ00HD MINGW64 /d/School/CEN4020/assignment2 (master)
+$ git log --follow ./Vehicle.h
+
+7) 
+
+dougl@DESKTOP-SDQ00HD MINGW64 /d/School/CEN4020/assignment2 (master)
+$ git log --all --grep="file"
+commit 26c961dc08bce80e526c7e85ec9571ecead5bb42
+Author: Douglas Shirilla <douglasshirilla@yahoo.com>
+Date:   Tue Oct 12 21:10:30 2021 -0400
+
+    Updated information files
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+
+8) In OOP, inheritance is where a new class is based upon an existing class that includes traits from the existing class in the new class.
+Polymorphism is the ability of an object to have multiple attributes and methods that are used in different ways depending on the class.
+Encapsulation is used to hide attributes and values within a class that prevents unauthorized usage from outside the class.
+
+9) The dictator and lieutenants workflow is where all work is from a single blessed repository for pulls, but the changes pushed to that repository must go through the lieutenants which then go through the dictator for final approval.
+The integration manager workflow has developers which have their own repository to work from which gets pulled from the blessed repository. Eventually their changes to the main blessed repository are integrated through the integration manager.
+
+10) A team of 100 developers could benefits form the dictator and lieutenants workflow in the way that their changes will be integrated through multiple levels of review which would result in a more solid code base compared to if they used the integration workflow where code conflicts could get out of hand.
